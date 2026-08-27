@@ -665,7 +665,7 @@ section[id], .unit[id]{ scroll-margin-top:92px; }
 .marquee__row:nth-child(2) .logo:hover{ border-color:var(--c-sof); }
 
 /* -------------------------------------------------------------- 12. CONTACTO */
-.section--contact{ overflow:hidden; }
+.section--contact{ overflow:hidden; background:#0A0B0D; }
 .contact{
   display:grid; grid-template-columns:1fr 1fr; gap:clamp(2.5rem,5vw,5rem);
   align-items:start;
@@ -731,7 +731,7 @@ section[id], .unit[id]{ scroll-margin-top:92px; }
 
 /* ---------------------------------------------------------------- 13. FOOTER */
 .footer{
-  background:var(--ink-2); color:var(--paper);
+  background:#121419; color:var(--paper);
   padding-top:clamp(3.5rem,6vw,5rem);
   border-top:1px solid rgba(247,249,252,.1);
 }
