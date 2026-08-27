@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Archivo, Helvetica Neue, Arial, sans-serif">
+  <rect width="1200" height="630" fill="#0A0B0D"/>
+
+  <!-- grilla -->
+  <g stroke="#F4F2ED" stroke-opacity="0.05">
+    <path d="M100 0V630M200 0V630M300 0V630M400 0V630M500 0V630M600 0V630M700 0V630M800 0V630M900 0V630M1000 0V630M1100 0V630"/>
+    <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200"/>
+  </g>
+
+  <!-- barra de color -->
+  <g>
+    <rect x="0" y="0" width="300" height="8" fill="#2FC6F2"/>
+    <rect x="300" y="0" width="300" height="8" fill="#FF4D9D"/>
+    <rect x="600" y="0" width="300" height="8" fill="#C9F24E"/>
+    <rect x="900" y="0" width="300" height="8" fill="#FFB020"/>
+  </g>
+
+  <!-- marca -->
+  <g transform="translate(88 86)">
+    <rect x="0"  y="0"  width="15" height="15" rx="2" fill="#2FC6F2"/>
+    <rect x="18" y="0"  width="15" height="15" rx="2" fill="#FF4D9D"/>
+    <rect x="0"  y="18" width="15" height="15" rx="2" fill="#C9F24E"/>
+    <rect x="18" y="18" width="15" height="15" rx="2" fill="#FFB020"/>
+    <text x="48" y="26" fill="#F4F2ED" font-size="27" font-weight="700" letter-spacing="-0.8">Office<tspan fill-opacity="0.55" font-weight="500">Pack</tspan></text>
+  </g>
+
+  <text x="88" y="300" fill="#F4F2ED" font-size="72" font-weight="700" letter-spacing="-3">Un solo proveedor</text>
+  <text x="88" y="382" fill="#F4F2ED" font-size="72" font-weight="700" letter-spacing="-3">para todo lo que tu</text>
+  <text x="88" y="464" fill="#F4F2ED" font-size="72" font-weight="700" letter-spacing="-3">oficina necesita.</text>
+
+  <g font-family="IBM Plex Mono, monospace" font-size="20" letter-spacing="2.4">
+    <text x="88" y="546" fill="#2FC6F2">TECNOLOGÍA</text>
+    <text x="300" y="546" fill="#FF4D9D">IMPRESIÓN</text>
+    <text x="492" y="546" fill="#C9F24E">SOFTWARE</text>
+    <text x="676" y="546" fill="#FFB020">MERCHANDISING</text>
+  </g>
+</svg>
