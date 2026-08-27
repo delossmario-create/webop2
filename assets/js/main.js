@@ -14,9 +14,6 @@ const CONFIG = {
   // automáticamente el botón y el dato de "Enviar por email".
   email: '',
 
-  // URL del perfil de LinkedIn. Vacío ('') = el link no se muestra.
-  linkedin: '',
-
   // Mensaje por defecto al abrir WhatsApp desde los botones generales.
   waSaludo: 'Hola Office Pack, quisiera hacer una consulta.'
 };
@@ -56,16 +53,6 @@ const CONFIG = {
     }
     const btn = $('[data-send-email]');
     if (btn) btn.hidden = false;
-  }
-
-  if (CONFIG.linkedin) {
-    const li = $('[data-linkedin]');
-    if (li) {
-      li.hidden = false;
-      li.href = CONFIG.linkedin;
-      li.target = '_blank';
-      li.rel = 'noopener';
-    }
   }
 
   /* ------------------------------------------------------ Nav: estado sticky */
