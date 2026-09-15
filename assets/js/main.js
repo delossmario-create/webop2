@@ -8,7 +8,7 @@
    --------------------------------------------------------------------------- */
 const CONFIG = {
   // Número de WhatsApp en formato internacional, sin + ni espacios.
-  whatsapp: '5491122530413',
+  whatsapp: '5491178192820',
 
   // Email de contacto. Si lo dejás vacío (''), el sitio oculta
   // automáticamente el botón y el dato de "Enviar por email".
