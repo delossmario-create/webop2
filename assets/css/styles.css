@@ -629,6 +629,15 @@ section[id], .unit[id]{ scroll-margin-top:92px; }
 .infolist dd{ font-size:var(--fs-sm); line-height:1.5; }
 .infolist a{ transition:color var(--t); border-bottom:1px solid transparent; }
 .infolist a:hover{ color:var(--c-tec); border-bottom-color:currentColor; }
+.infolist > .infolist__social{ align-items:center; padding:.8rem 0; }
+.social{ display:flex; gap:.6rem; }
+.social a{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:40px; height:40px; border:1px solid var(--line-2); border-radius:var(--r-lg);
+  transition:color var(--t), border-color var(--t), background var(--t);
+}
+.social svg{ width:20px; height:20px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+.infolist .social a:hover{ border-color:var(--c-tec); background:var(--surface); }
 
 /* Tarjeta de formulario */
 .formcard{
