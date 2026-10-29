@@ -535,7 +535,6 @@ section[id], .unit[id]{ scroll-margin-top:92px; }
   column-gap:clamp(1.5rem,3vw,3rem);
   margin-left:clamp(0rem,3.4vw,3.6rem);
 }
-.svc--2{ grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); max-width:56rem; }
 .svc li{
   position:relative;
   border-top:1px solid var(--line);
