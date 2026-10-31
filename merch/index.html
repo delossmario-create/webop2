@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OfficeMerch | Merchandising corporativo — Office Pack</title>
+<meta name="description" content="OfficeMerch, la unidad de merchandising de Office Pack: artículos corporativos personalizados, indumentaria, gráfica y eventos, kits de bienvenida y desarrollos a medida.">
+<meta name="theme-color" content="#071b34">
+
+<!-- BORRADOR: quitar esta línea al publicar la página -->
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.css">
+<link rel="stylesheet" href="/merch/merch.css">
+
+<script>
+  /* Marca que hay JS: el CSS solo esconde contenido (reveals) si esta clase existe.
+     Failsafe: si main.js no carga o falla, a los 2,5s se muestra todo el contenido igual. */
+  document.documentElement.classList.add('js');
+  setTimeout(function () {
+    if (!window.__opReady) document.documentElement.classList.remove('js');
+  }, 2500);
+</script>
+</head>
+<body>
+
+<a class="skip" href="#categorias">Saltar al contenido</a>
+<div class="colorbar colorbar--top" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <div class="brandset">
+      <a class="brand" href="#top" aria-label="OfficeMerch — inicio">
+        <img class="brand__logo" src="/assets/img/officemerch-header.webp" alt="OfficeMerch">
+      </a>
+      <a class="brandset__by" href="/">
+        <span>Una solución de</span>
+        <img src="/assets/img/officepack-letras-blanco.png" alt="Office Pack">
+      </a>
+    </div>
+
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="/">Inicio</a>
+      <a href="#categorias" data-navlink>Categorías</a>
+      <a href="#proceso" data-navlink>Cómo trabajamos</a>
+      <a href="#contacto" data-navlink>Contacto</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a class="btn btn--sm btn--wa" href="#" data-wa>
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-wa"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.31-1.96 1.36-.5.05-.99.23-3.35-.7-2.82-1.11-4.6-3.98-4.74-4.17-.14-.19-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.24-.27.53-.34.71-.34l.51.01c.16 0 .38-.06.6.46.23.55.77 1.9.84 2.04.07.14.11.3.02.48-.09.19-.14.3-.27.46l-.4.47c-.13.14-.27.29-.12.56.15.27.66 1.09 1.42 1.77.97.87 1.79 1.14 2.05 1.27.26.14.41.11.56-.07.15-.18.65-.76.82-1.02.17-.27.34-.22.57-.14.23.09 1.48.7 1.73.83.25.13.42.19.48.3.06.1.06.63-.18 1.31Z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mobilenav" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mnav" id="mobilenav" hidden>
+  <div class="colorbar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <nav class="mnav__links" aria-label="Navegación móvil">
+    <a href="/"><em>01</em> Inicio</a>
+    <a href="#categorias"><em>02</em> Categorías</a>
+    <a href="#proceso"><em>03</em> Cómo trabajamos</a>
+    <a href="#contacto"><em>04</em> Contacto</a>
+  </nav>
+  <div class="mnav__foot">
+    <a class="btn btn--wa btn--block" href="#" data-wa>Hablar por WhatsApp</a>
+    <a class="mnav__tel" href="tel:+5491178192820">(54 911) 7819 2820</a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO (carrusel) ============ -->
+<!-- Imagen de fondo por diapositiva: en su <div class="merch-slide__bg"> agregar
+     style="--img:url('/merch/img/NOMBRE.jpg')". Ideal: 2400×1200 px (mínimo 1920×1000), WebP o JPG, menos de 300 KB.
+     Sujeto principal a la derecha y al centro en vertical (el texto va a la izquierda).
+     La posición se ajusta con --img-pos (ej: style="--img:url(...); --img-pos:70% center"). -->
+<section class="hero merch-hero theme-dark" id="hero">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="merch-carousel" data-carousel role="region" aria-roledescription="carousel" aria-label="Destacados de OfficeMerch">
+    <div class="merch-slides" data-slides>
+
+      <!-- 1 · Tu marca, bien aplicada -->
+      <div class="merch-slide merch-slide--wide is-active" data-slide role="group" aria-roledescription="slide" aria-label="1 de 3">
+        <div class="merch-slide__bg" aria-hidden="true" style="--img:url('/merch/img/tu-marca-bien-aplicada.webp')"></div>
+        <div class="wrap hero__in">
+          <div class="hero__copy">
+            <p class="eyebrow">
+              <span class="eyebrow__dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+              Merchandising corporativo
+            </p>
+
+            <h1 class="hero__h1">
+              Tu marca, <span class="mark">bien aplicada</span>.
+            </h1>
+
+            <p class="hero__lead">
+              Artículos corporativos personalizados: tu marca aplicada a productos que la gente
+              usa todos los días.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#categorias">
+                Ver categorías
+                <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="#" data-wa>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-wa"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.31-1.96 1.36-.5.05-.99.23-3.35-.7-2.82-1.11-4.6-3.98-4.74-4.17-.14-.19-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.24-.27.53-.34.71-.34l.51.01c.16 0 .38-.06.6.46.23.55.77 1.9.84 2.04.07.14.11.3.02.48-.09.19-.14.3-.27.46l-.4.47c-.13.14-.27.29-.12.56.15.27.66 1.09 1.42 1.77.97.87 1.79 1.14 2.05 1.27.26.14.41.11.56-.07.15-.18.65-.76.82-1.02.17-.27.34-.22.57-.14.23.09 1.48.7 1.73.83.25.13.42.19.48.3.06.1.06.63-.18 1.31Z"/></svg>
+                Hablar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 · Regalos de fin de año -->
+      <div class="merch-slide merch-slide--wide" data-slide role="group" aria-roledescription="slide" aria-label="2 de 3">
+        <div class="merch-slide__bg" aria-hidden="true" style="--img:url('/merch/img/regalos-fin-de-anio.webp')"></div>
+        <div class="wrap hero__in">
+          <div class="hero__copy">
+            <p class="eyebrow">
+              <span class="eyebrow__dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+              Regalos de fin de año
+            </p>
+
+            <h2 class="hero__h1 hero__h1--sm">
+              Cerrá el año con <span class="mark">regalos</span> que hablan de tu marca.
+            </h2>
+
+            <p class="hero__lead">
+              Kits de bienvenida, promocionales y textiles personalizados para agradecer a tus
+              clientes, equipos y proveedores. Combos estándar o a medida, listos para regalar.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contacto" data-cat="Kits de bienvenida" data-msg="Hola, quisiera cotizar regalos de fin de año. ">
+                Cotizar regalos
+                <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="#categorias">Ver categorías</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 · Diseños personalizados y a medida -->
+      <div class="merch-slide merch-slide--wide" data-slide role="group" aria-roledescription="slide" aria-label="3 de 3">
+        <div class="merch-slide__bg" aria-hidden="true" style="--img:url('/merch/img/disenos-a-medida.webp')"></div>
+        <div class="wrap hero__in">
+          <div class="hero__copy">
+            <p class="eyebrow">
+              <span class="eyebrow__dots" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+              Diseños personalizados y a medida
+            </p>
+
+            <h2 class="hero__h1 hero__h1--sm">
+              Si lo imaginás, lo <span class="mark">desarrollamos</span>.
+            </h2>
+
+            <p class="hero__lead">
+              Llevamos a cabo tu idea con diseños y matrices a medida: productos pensados desde
+              cero para tu marca, de la primera propuesta al producto terminado.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contacto" data-cat="Desarrollos a medida" data-msg="Hola, tengo una idea para un producto a medida. ">
+                Contanos tu idea
+                <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="#proceso">Cómo trabajamos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="merch-carousel__ui">
+      <div class="wrap merch-carousel__bar">
+        <button class="mc-btn" type="button" data-prev aria-label="Diapositiva anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+        </button>
+        <div class="mc-dots" role="group" aria-label="Elegir diapositiva">
+          <button class="mc-dot" type="button" data-dot aria-label="Diapositiva 1: Tu marca, bien aplicada" aria-current="true"></button>
+          <button class="mc-dot" type="button" data-dot aria-label="Diapositiva 2: Regalos de fin de año" aria-current="false"></button>
+          <button class="mc-dot" type="button" data-dot aria-label="Diapositiva 3: Diseños personalizados y a medida" aria-current="false"></button>
+        </div>
+        <button class="mc-btn" type="button" data-next aria-label="Diapositiva siguiente">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+        </button>
+        <button class="mc-btn mc-btn--toggle" type="button" data-toggle aria-label="Pausar rotación automática" aria-pressed="false">
+          <svg class="mc-ico-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6v12M15 6v12"/></svg>
+          <svg class="mc-ico-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORÍAS ============ -->
+<section class="section theme-light merch-cats" id="categorias">
+  <div class="wrap">
+    <header class="shead" data-reveal>
+      <p class="label"><em>01</em> Categorías</p>
+      <h2 class="shead__h2">Cinco categorías para llevar tu marca a todas partes.</h2>
+      <p class="shead__lead">
+        Agrupamos los productos de la unidad en cinco categorías. Elegí la que se parezca a lo
+        que buscás, o contanos tu idea.
+      </p>
+    </header>
+
+    <ul class="cats" data-reveal>
+      <li class="cat">
+        <div class="cat__top">
+          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h11v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M15 10h2.5a2.5 2.5 0 0 1 0 5H15"/><path d="M8 3v2M11 3v2"/></svg>
+          <span class="cat__n">01</span>
+        </div>
+        <h3>Promocionales</h3>
+        <p>Drinkware, agendas y artículos de librería, mochilas, bazar, accesorios y más.</p>
+      </li>
+      <li class="cat">
+        <div class="cat__top">
+          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4 3.5 6.5l2 3.5L8 9v11h8V9l2.5 1 2-3.5L16 4a4 4 0 0 1-8 0z"/></svg>
+          <span class="cat__n">02</span>
+        </div>
+        <h3>Indumentaria y textil</h3>
+        <p>Uniformes y ropa de trabajo, gorras, remeras y otros textiles promocionales.</p>
+      </li>
+      <li class="cat">
+        <div class="cat__top">
+          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v14H6z"/><path d="M9 7h6M9 10h6"/><path d="M9 21h6M12 17v4"/></svg>
+          <span class="cat__n">03</span>
+        </div>
+        <h3>Gráfica y eventos</h3>
+        <p>Banners, folletería, papelería institucional, tarjetas corporativas, display para eventos y más.</p>
+      </li>
+      <li class="cat">
+        <div class="cat__top">
+          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v10H4z"/><path d="M3 7h18v3H3z"/><path d="M12 7v13"/><path d="M12 7C10.5 3 6.5 4 8 7M12 7c1.5-4 5.5-3 4 0"/></svg>
+          <span class="cat__n">04</span>
+        </div>
+        <h3>Kits de bienvenida</h3>
+        <p>Combos para ocasiones especiales, combinaciones estándar o a medida, regalos para clientes.</p>
+      </li>
+      <li class="cat">
+        <div class="cat__top">
+          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12 4 7.5"/></svg>
+          <span class="cat__n">05</span>
+        </div>
+        <h3>Desarrollos a medida</h3>
+        <p>Llevamos a cabo tu idea con diseños y matrices a medida.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROCESO ============ -->
+<section class="section theme-light section--process" id="proceso">
+  <div class="wrap">
+    <header class="shead shead--center" data-reveal>
+      <p class="label"><em>02</em> Cómo trabajamos</p>
+      <h2 class="shead__h2">De la idea al producto en tus manos.</h2>
+    </header>
+
+    <ol class="steps">
+      <li class="step" data-reveal>
+        <span class="step__n">01</span>
+        <h3>Brief</h3>
+        <p>Nos contás qué querés comunicar, para quién y en qué ocasión.</p>
+      </li>
+      <li class="step" data-reveal style="--d:.07s">
+        <span class="step__n">02</span>
+        <h3>Propuesta</h3>
+        <p>Te proponemos productos y aplicaciones de tu marca, con alternativas por presupuesto.</p>
+      </li>
+      <li class="step" data-reveal style="--d:.14s">
+        <span class="step__n">03</span>
+        <h3>Producción</h3>
+        <p>Coordinamos diseño, matrices y fabricación con un solo interlocutor.</p>
+      </li>
+      <li class="step" data-reveal style="--d:.21s">
+        <span class="step__n">04</span>
+        <h3>Entrega</h3>
+        <p>Recibís tus productos listos para usar, regalar o repartir.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="section theme-dark section--contact" id="contacto">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="contact">
+
+      <div class="contact__info">
+        <p class="label"><em>03</em> Contacto</p>
+        <h2 class="shead__h2">Contanos tu idea.</h2>
+        <p class="shead__lead">
+          Decinos qué necesita tu empresa y te ayudamos a elegir la categoría y los productos
+          indicados.
+        </p>
+
+        <dl class="infolist">
+          <div>
+            <dt>Teléfono</dt>
+            <dd><a href="tel:+5491178192820">(54 911) 7819 2820</a></dd>
+          </div>
+          <div>
+            <dt>E-mail</dt>
+            <dd><a href="mailto:ventas@officepack.com.ar">ventas@officepack.com.ar</a></dd>
+          </div>
+          <div class="infolist__social">
+            <dt>Redes</dt>
+            <dd class="social">
+              <a href="https://www.instagram.com/office_pack/" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/office-pack" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M12 10.5V17M12 13.5a2.5 2.5 0 0 1 5 0V17"/><circle cx="8" cy="7.4" r=".6" fill="currentColor"/></svg>
+              </a>
+            </dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="formcard">
+        <div class="colorbar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="formcard__in">
+          <h3 class="formcard__h">Solicitar información</h3>
+          <p class="formcard__sub">Completá el formulario y coordinamos una respuesta a la brevedad.</p>
+
+          <form id="contactForm" action="https://formspree.io/f/xrpznypv" method="POST" novalidate>
+            <input type="hidden" name="_subject" value="Nueva consulta desde la web - OfficeMerch">
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+            <div class="f2">
+              <div class="field">
+                <label for="f-nombre">Nombre y apellido <span aria-hidden="true">*</span></label>
+                <input id="f-nombre" name="nombre" type="text" autocomplete="name" placeholder="Tu nombre" required aria-describedby="e-nombre">
+                <p class="err" id="e-nombre" role="alert" hidden></p>
+              </div>
+              <div class="field">
+                <label for="f-empresa">Empresa <span aria-hidden="true">*</span></label>
+                <input id="f-empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nombre de tu empresa" required aria-describedby="e-empresa">
+                <p class="err" id="e-empresa" role="alert" hidden></p>
+              </div>
+            </div>
+
+            <div class="f2">
+              <div class="field">
+                <label for="f-email">Email <span aria-hidden="true">*</span></label>
+                <input id="f-email" name="email" type="email" autocomplete="email" placeholder="nombre@empresa.com" required aria-describedby="e-email">
+                <p class="err" id="e-email" role="alert" hidden></p>
+              </div>
+              <div class="field">
+                <label for="f-tel">Teléfono <span class="opt">opcional</span></label>
+                <input id="f-tel" name="telefono" type="tel" autocomplete="tel" placeholder="11 0000 0000">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-unidad">Categoría de interés</label>
+              <div class="selectwrap">
+                <select id="f-unidad" name="unidad">
+                  <option>Promocionales</option>
+                  <option>Indumentaria y textil</option>
+                  <option>Gráfica y eventos</option>
+                  <option>Kits de bienvenida</option>
+                  <option>Desarrollos a medida</option>
+                  <option>Varias categorías / todavía no sé</option>
+                </select>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-chev"><path d="m6 9 6 6 6-6"/></svg>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-msg">Mensaje <span aria-hidden="true">*</span></label>
+              <textarea id="f-msg" name="mensaje" rows="4" placeholder="Contanos brevemente qué necesita tu empresa" required aria-describedby="e-msg"></textarea>
+              <p class="err" id="e-msg" role="alert" hidden></p>
+            </div>
+
+            <div class="formcard__actions">
+              <button class="btn btn--primary btn--block" type="submit">
+                Enviar consulta
+                <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+
+            <p class="formcard__note" id="formNote">Te respondemos por WhatsApp o email, como prefieras.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer theme-dark">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="brand brand--lg" href="/" aria-label="Office Pack — inicio">
+          <img class="brand__logo" src="/assets/img/logo-footer.png" alt="Office Pack">
+        </a>
+        <p>OfficeMerch, la unidad de merchandising de Office Pack.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Merchandising">
+        <h4>Merchandising</h4>
+        <a href="#categorias">Categorías</a>
+        <a href="#proceso">Cómo trabajamos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Office Pack">
+        <h4>Office Pack</h4>
+        <a href="/">Inicio</a>
+        <a href="/#unidades">Soluciones</a>
+        <a href="/#nosotros">Quiénes somos</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Contacto">
+        <h4>Contacto</h4>
+        <a href="tel:+5491178192820">(54 911) 7819 2820</a>
+        <a href="#" data-wa>WhatsApp</a>
+        <a href="https://www.linkedin.com/company/office-pack" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+
+    <div class="footer__bar">
+      <p>© <span id="year">2026</span> Office Pack — Operado por 4 LOG S.R.L. · CUIT 30-71767962-1</p>
+      <p>Todos los derechos reservados.</p>
+    </div>
+  </div>
+  <div class="colorbar" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+</footer>
+
+<a class="fab" href="#" data-wa aria-label="Hablar por WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.42 1.31-1.96 1.36-.5.05-.99.23-3.35-.7-2.82-1.11-4.6-3.98-4.74-4.17-.14-.19-1.13-1.5-1.13-2.87 0-1.36.71-2.03.97-2.31.24-.27.53-.34.71-.34l.51.01c.16 0 .38-.06.6.46.23.55.77 1.9.84 2.04.07.14.11.3.02.48-.09.19-.14.3-.27.46l-.4.47c-.13.14-.27.29-.12.56.15.27.66 1.09 1.42 1.77.97.87 1.79 1.14 2.05 1.27.26.14.41.11.56-.07.15-.18.65-.76.82-1.02.17-.27.34-.22.57-.14.23.09 1.48.7 1.73.83.25.13.42.19.48.3.06.1.06.63-.18 1.31Z"/></svg>
+  <span>Escribinos</span>
+</a>
+
+<script src="/assets/js/main.js"></script>
+<script src="/merch/carousel.js" defer></script>
+</body>
+</html>
