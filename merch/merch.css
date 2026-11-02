@@ -107,7 +107,12 @@
 }
 @media (max-width:1080px){
   .merch-slide{ padding-top:clamp(7rem,14vh,9rem); }
-  .merch-slide__bg::after{ background:linear-gradient(180deg, rgba(7,27,52,.88) 0%, rgba(7,27,52,.72) 100%); }
+  /* En pantallas chicas se recorta mucho la foto: --img-pos-m elige qué parte priorizar */
+  .merch-slide__bg{ background-position:var(--img-pos-m, var(--img-pos, center)); }
+  /* Oscurecido de la foto en pantallas chicas; --scrim-top / --scrim-bot lo ajustan por diapositiva */
+  .merch-slide__bg::after{
+    background:linear-gradient(180deg, rgba(7,27,52,var(--scrim-top,.88)) 0%, rgba(7,27,52,var(--scrim-bot,.72)) 100%);
+  }
 }
 @media (max-width:640px){
   .merch-slide{ padding-top:6.5rem; }
