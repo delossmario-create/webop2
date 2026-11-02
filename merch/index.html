@@ -224,48 +224,178 @@
       </p>
     </header>
 
-    <ul class="cats" data-reveal>
-      <li class="cat">
-        <div class="cat__top">
-          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h11v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M15 10h2.5a2.5 2.5 0 0 1 0 5H15"/><path d="M8 3v2M11 3v2"/></svg>
-          <span class="cat__n">01</span>
+    <div class="units" id="units">
+
+      <!-- 01 PROMOCIONALES -->
+      <article class="unit" id="promocionales">
+        <h3 class="unit__h">
+          <button class="unit__head" aria-expanded="false" aria-controls="body-promocionales">
+            <span class="unit__n">01</span>
+            <svg class="unit__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h11v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M15 10h2.5a2.5 2.5 0 0 1 0 5H15"/><path d="M8 3v2M11 3v2"/></svg>
+            <span class="unit__title">
+              <span class="unit__name">Promocionales</span>
+              <span class="unit__tag">Drinkware, agendas, mochilas y más</span>
+            </span>
+            <span class="unit__meta">5+ productos</span>
+            <span class="unit__plus" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="unit__body" id="body-promocionales" role="region">
+          <div class="unit__clip">
+            <div class="unit__inner">
+              <p class="unit__lead">Drinkware, agendas y artículos de librería, mochilas, bazar, accesorios y más.</p>
+              <ul class="svc">
+                <li><span class="n">01</span><h4>Drinkware</h4></li>
+                <li><span class="n">02</span><h4>Agendas y artículos de librería</h4></li>
+                <li><span class="n">03</span><h4>Mochilas</h4></li>
+                <li><span class="n">04</span><h4>Bazar</h4></li>
+                <li><span class="n">05</span><h4>Accesorios</h4></li>
+              </ul>
+              <div class="unit__cta">
+                <a class="btn btn--unit" href="#contacto" data-cat="Promocionales" data-msg="Hola, quisiera cotizar productos promocionales. ">Cotizar Promocionales
+                  <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3>Promocionales</h3>
-        <p>Drinkware, agendas y artículos de librería, mochilas, bazar, accesorios y más.</p>
-      </li>
-      <li class="cat">
-        <div class="cat__top">
-          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4 3.5 6.5l2 3.5L8 9v11h8V9l2.5 1 2-3.5L16 4a4 4 0 0 1-8 0z"/></svg>
-          <span class="cat__n">02</span>
+      </article>
+
+      <!-- 02 INDUMENTARIA Y TEXTIL -->
+      <article class="unit" id="indumentaria">
+        <h3 class="unit__h">
+          <button class="unit__head" aria-expanded="false" aria-controls="body-indumentaria">
+            <span class="unit__n">02</span>
+            <svg class="unit__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4 3.5 6.5l2 3.5L8 9v11h8V9l2.5 1 2-3.5L16 4a4 4 0 0 1-8 0z"/></svg>
+            <span class="unit__title">
+              <span class="unit__name">Indumentaria y textil</span>
+              <span class="unit__tag">Uniformes, gorras y remeras</span>
+            </span>
+            <span class="unit__meta">4 productos</span>
+            <span class="unit__plus" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="unit__body" id="body-indumentaria" role="region">
+          <div class="unit__clip">
+            <div class="unit__inner">
+              <p class="unit__lead">Uniformes y ropa de trabajo, gorras, remeras y otros textiles promocionales.</p>
+              <ul class="svc">
+                <li><span class="n">01</span><h4>Uniformes y ropa de trabajo</h4></li>
+                <li><span class="n">02</span><h4>Gorras</h4></li>
+                <li><span class="n">03</span><h4>Remeras</h4></li>
+                <li><span class="n">04</span><h4>Otros textiles promocionales</h4></li>
+              </ul>
+              <div class="unit__cta">
+                <a class="btn btn--unit" href="#contacto" data-cat="Indumentaria y textil" data-msg="Hola, quisiera cotizar indumentaria y textiles. ">Cotizar Indumentaria y textil
+                  <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3>Indumentaria y textil</h3>
-        <p>Uniformes y ropa de trabajo, gorras, remeras y otros textiles promocionales.</p>
-      </li>
-      <li class="cat">
-        <div class="cat__top">
-          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v14H6z"/><path d="M9 7h6M9 10h6"/><path d="M9 21h6M12 17v4"/></svg>
-          <span class="cat__n">03</span>
+      </article>
+
+      <!-- 03 GRÁFICA Y EVENTOS -->
+      <article class="unit" id="grafica">
+        <h3 class="unit__h">
+          <button class="unit__head" aria-expanded="false" aria-controls="body-grafica">
+            <span class="unit__n">03</span>
+            <svg class="unit__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v14H6z"/><path d="M9 7h6M9 10h6"/><path d="M9 21h6M12 17v4"/></svg>
+            <span class="unit__title">
+              <span class="unit__name">Gráfica y eventos</span>
+              <span class="unit__tag">Banners, folletería y displays</span>
+            </span>
+            <span class="unit__meta">5+ productos</span>
+            <span class="unit__plus" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="unit__body" id="body-grafica" role="region">
+          <div class="unit__clip">
+            <div class="unit__inner">
+              <p class="unit__lead">Banners, folletería, papelería institucional, tarjetas corporativas, display para eventos y más.</p>
+              <ul class="svc">
+                <li><span class="n">01</span><h4>Banners</h4></li>
+                <li><span class="n">02</span><h4>Folletería</h4></li>
+                <li><span class="n">03</span><h4>Papelería institucional</h4></li>
+                <li><span class="n">04</span><h4>Tarjetas corporativas</h4></li>
+                <li><span class="n">05</span><h4>Display para eventos</h4></li>
+              </ul>
+              <div class="unit__cta">
+                <a class="btn btn--unit" href="#contacto" data-cat="Gráfica y eventos" data-msg="Hola, quisiera cotizar gráfica y material para eventos. ">Cotizar Gráfica y eventos
+                  <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3>Gráfica y eventos</h3>
-        <p>Banners, folletería, papelería institucional, tarjetas corporativas, display para eventos y más.</p>
-      </li>
-      <li class="cat">
-        <div class="cat__top">
-          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v10H4z"/><path d="M3 7h18v3H3z"/><path d="M12 7v13"/><path d="M12 7C10.5 3 6.5 4 8 7M12 7c1.5-4 5.5-3 4 0"/></svg>
-          <span class="cat__n">04</span>
+      </article>
+
+      <!-- 04 KITS DE BIENVENIDA -->
+      <article class="unit" id="kits">
+        <h3 class="unit__h">
+          <button class="unit__head" aria-expanded="false" aria-controls="body-kits">
+            <span class="unit__n">04</span>
+            <svg class="unit__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16v10H4z"/><path d="M3 7h18v3H3z"/><path d="M12 7v13"/><path d="M12 7C10.5 3 6.5 4 8 7M12 7c1.5-4 5.5-3 4 0"/></svg>
+            <span class="unit__title">
+              <span class="unit__name">Kits de bienvenida</span>
+              <span class="unit__tag">Combos y regalos para clientes</span>
+            </span>
+            <span class="unit__meta">3 opciones</span>
+            <span class="unit__plus" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="unit__body" id="body-kits" role="region">
+          <div class="unit__clip">
+            <div class="unit__inner">
+              <p class="unit__lead">Combos para ocasiones especiales, combinaciones estándar o a medida, regalos para clientes.</p>
+              <ul class="svc">
+                <li><span class="n">01</span><h4>Combos para ocasiones especiales</h4></li>
+                <li><span class="n">02</span><h4>Combinaciones estándar o a medida</h4></li>
+                <li><span class="n">03</span><h4>Regalos para clientes</h4></li>
+              </ul>
+              <div class="unit__cta">
+                <a class="btn btn--unit" href="#contacto" data-cat="Kits de bienvenida" data-msg="Hola, quisiera cotizar kits de bienvenida. ">Cotizar Kits de bienvenida
+                  <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3>Kits de bienvenida</h3>
-        <p>Combos para ocasiones especiales, combinaciones estándar o a medida, regalos para clientes.</p>
-      </li>
-      <li class="cat">
-        <div class="cat__top">
-          <svg class="cat__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12 4 7.5"/></svg>
-          <span class="cat__n">05</span>
+      </article>
+
+      <!-- 05 DESARROLLOS A MEDIDA -->
+      <article class="unit" id="desarrollos">
+        <h3 class="unit__h">
+          <button class="unit__head" aria-expanded="false" aria-controls="body-desarrollos">
+            <span class="unit__n">05</span>
+            <svg class="unit__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M12 12l8-4.5M12 12v9M12 12 4 7.5"/></svg>
+            <span class="unit__title">
+              <span class="unit__name">Desarrollos a medida</span>
+              <span class="unit__tag">Tu idea, con diseños y matrices</span>
+            </span>
+            <span class="unit__meta">2 servicios</span>
+            <span class="unit__plus" aria-hidden="true"></span>
+          </button>
+        </h3>
+        <div class="unit__body" id="body-desarrollos" role="region">
+          <div class="unit__clip">
+            <div class="unit__inner">
+              <p class="unit__lead">Llevamos a cabo tu idea con diseños y matrices a medida.</p>
+              <ul class="svc">
+                <li><span class="n">01</span><h4>Diseños a medida</h4></li>
+                <li><span class="n">02</span><h4>Matrices a medida</h4></li>
+              </ul>
+              <div class="unit__cta">
+                <a class="btn btn--unit" href="#contacto" data-cat="Desarrollos a medida" data-msg="Hola, tengo una idea para un producto a medida. ">Cotizar Desarrollos a medida
+                  <svg viewBox="0 0 24 24" class="ico-arrow" aria-hidden="true"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3>Desarrollos a medida</h3>
-        <p>Llevamos a cabo tu idea con diseños y matrices a medida.</p>
-      </li>
-    </ul>
+      </article>
+
+    </div>
   </div>
 </section>
 
