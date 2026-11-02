@@ -123,5 +123,10 @@
 .merch-cats .unit{ --u:var(--c-tec-ink); }
 .merch-cats .unit.is-open .unit__plus::before,
 .merch-cats .unit.is-open .unit__plus::after{ background:#fff; }
+/* Subcategorías (nivel General del árbol): ícono arriba, nombre y descripción debajo */
+.merch-cats .svc__ico{
+  display:block; width:30px; height:30px; margin-bottom:.85rem;
+  fill:none; stroke:var(--u); stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round;
+}
 .merch-cats .btn--unit{ background:var(--ink); color:var(--paper); }
 .merch-cats .btn--unit:hover{ filter:none; background:var(--ink-3); }
