@@ -552,6 +552,10 @@ section[id], .unit[id]{ scroll-margin-top:92px; }
   display:block; font:500 var(--fs-label)/1 var(--mono); letter-spacing:.12em;
   color:var(--u); opacity:.75; margin-bottom:.6rem;
 }
+.svc__ico{
+  display:block; width:30px; height:30px; margin-bottom:.85rem;
+  fill:none; stroke:var(--u); stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round;
+}
 .svc h4{ font-size:1.0rem; font-weight:600; letter-spacing:-.02em; line-height:1.25; }
 .svc p{ margin-top:.4rem; font-size:var(--fs-xs); line-height:1.55; color:var(--fg-dim); }
 
