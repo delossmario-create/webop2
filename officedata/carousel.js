@@ -90,6 +90,11 @@
     if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) go(index + (dx < 0 ? 1 : -1));
   }, { passive: true });
 
+  // El botón "Solicitar Demo" abre WhatsApp con un mensaje propio (main.js ya cargó el número)
+  document.querySelectorAll('[data-wa-text]').forEach((a) => {
+    try { const u = new URL(a.href); u.searchParams.set('text', a.dataset.waText); a.href = u.toString(); } catch (e) {}
+  });
+
   setPaused(userPaused);
   go(0);
 })();
