@@ -118,6 +118,10 @@
 .mc-dot:hover{ background:rgba(247,249,252,.75); }
 .mc-dot[aria-current="true"]{ width:28px; background:var(--c-tec); }
 
+/* Botón "Ingresar a la App": violeta propio de OfficeData */
+.btn--app{ background:#5B3BC9; color:#fff; }
+.btn--app:hover{ background:#6B4BDB; }
+
 /* Cursor de terminal parpadeando al final del título */
 .od-caret{
   display:inline-block; width:.4em; height:.8em; margin-left:.12em;
