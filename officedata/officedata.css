@@ -183,6 +183,12 @@
   background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='24' shape-rendering='crispEdges'%3E%3Crect x='0' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='8' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='16' y='8' width='8' height='16' fill='rgb(10,11,13)'/%3E%3Crect x='24' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='48' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='56' y='8' width='8' height='16' fill='rgb(10,11,13)'/%3E%3Crect x='64' y='8' width='8' height='16' fill='rgb(10,11,13)'/%3E%3Crect x='72' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='80' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='96' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='104' y='8' width='8' height='16' fill='rgb(10,11,13)'/%3E%3Crect x='112' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3C/svg%3E") repeat-x left bottom / 128px 24px;
 }
 
+/* ------------------------------------------------------------------- FOOTER */
+/* OfficeData como marca principal y "Una solución de Office Pack" debajo (igual que el header) */
+.footer__brand .brand--lg .brand__logo{ height:40px; }
+.footer__by{ margin-top:1rem; padding-left:0; border-left:0; font-size:calc(var(--fs-xs) - 1pt); }
+.footer__by img{ height:13px; }
+
 /* ------------------------------------------------------------ RESPONSIVE */
 @media (min-width:1081px){
   /* Columnas de ancho fijo: la ilustración se adapta a la columna y no la estira */
