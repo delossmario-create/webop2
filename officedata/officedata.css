@@ -1,0 +1,202 @@
+/* ==========================================================================
+   OFFICEDATA — estilos propios de /officedata
+   Se carga después de /assets/css/styles.css y reutiliza sus tokens (colores y
+   tipografías del sitio). Lo único propio es el toque "pixel art".
+   ========================================================================== */
+
+/* ----------------------------------------------------------------- HEADER */
+/* OfficeData + "Una solución de" + letras de Office Pack (siempre en blanco) */
+.brandset{ display:flex; align-items:center; gap:1.1rem; min-width:0; }
+.brandset__by{
+  display:inline-flex; align-items:center; gap:.55rem;
+  padding-left:1.1rem; border-left:1px solid rgba(247,249,252,.22);
+  font:500 calc(var(--fs-xs) - 1pt)/1 "Roboto", system-ui, sans-serif; letter-spacing:.03em; white-space:nowrap;
+  color:rgba(247,249,252,.62);
+  transition:color var(--t);
+}
+.brandset__by img{ height:12.278px; width:auto; opacity:.9; transition:opacity .25s var(--ease); }
+.brandset__by:hover{ color:#fff; }
+.brandset__by:hover img{ opacity:1; }
+
+/* El conjunto es más ancho que el logo solo: el menú hamburguesa entra antes */
+.nav__links a{ white-space:nowrap; }
+@media (max-width:1200px){
+  .nav__links,.nav__cta{ display:none; }
+  .burger{ display:block; }
+}
+/* En pantallas angostas, "Una solución de…" pasa debajo del logo */
+@media (max-width:560px){
+  .brandset{ flex-direction:column; align-items:flex-start; gap:.4rem; }
+  .brandset .brand__logo{ height:30px; }
+  .brandset__by{ padding-left:0; border-left:0; gap:.45rem; font-size:calc(.6875rem - 1pt); }
+  .brandset__by img{ height:9.004px; }
+}
+
+/* ----------------------------------------------------------- PIXEL ART (base) */
+/* Los puntos del copete pasan de círculos a píxeles */
+.eyebrow__dots i{ border-radius:0; }
+
+/* Ícono pixelado de una sola tinta (12×12): se pinta con la variable --u de la unidad */
+.px{
+  display:block; width:36px; height:36px; margin-bottom:.85rem;
+  fill:var(--u); shape-rendering:crispEdges;
+}
+
+/* ------------------------------------------------------------------- HERO */
+/* El hero es un carrusel (mismo esquema que /merch/). El padding superior pasa a cada
+   diapositiva para que un eventual fondo con foto cubra también la zona del header. */
+.od-hero{ padding-top:0; }
+.od-hero .hero__h1{ font-size:clamp(2.4rem,5vw,4.4rem); }
+.od-hero .hero__h1--sm{ font-size:clamp(2.1rem,4.6vw,3.9rem); }
+
+/* Fondo: píxeles sueltos en vez del circuito del home */
+.od-hero .hero__grid{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' shape-rendering='crispEdges'%3E%3Crect x='112' y='136' width='8' height='8' fill='rgba(247,249,252,0.17)'/%3E%3Crect x='144' y='48' width='8' height='8' fill='rgba(247,249,252,0.07)'/%3E%3Crect x='120' y='160' width='8' height='8' fill='rgba(247,249,252,0.07)'/%3E%3Crect x='120' y='168' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='32' y='16' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='96' y='112' width='8' height='8' fill='rgba(247,249,252,0.07)'/%3E%3Crect x='128' y='16' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='136' y='16' width='8' height='8' fill='rgba(247,249,252,0.03)'/%3E%3Crect x='152' y='0' width='8' height='8' fill='rgba(247,249,252,0.17)'/%3E%3Crect x='160' y='8' width='8' height='8' fill='rgba(247,249,252,0.12)'/%3E%3Crect x='48' y='128' width='8' height='8' fill='rgba(247,249,252,0.07)'/%3E%3Crect x='120' y='0' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='64' y='104' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='80' y='56' width='8' height='8' fill='rgba(247,249,252,0.11)'/%3E%3Crect x='88' y='64' width='8' height='8' fill='rgba(247,249,252,0.08)'/%3E%3Crect x='24' y='96' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='96' y='16' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='0' y='48' width='8' height='8' fill='rgba(247,249,252,0.07)'/%3E%3Crect x='8' y='120' width='8' height='8' fill='rgba(247,249,252,0.17)'/%3E%3Crect x='96' y='104' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='48' y='168' width='8' height='8' fill='rgba(247,249,252,0.11)'/%3E%3Crect x='48' y='176' width='8' height='8' fill='rgba(247,249,252,0.08)'/%3E%3Crect x='80' y='0' width='8' height='8' fill='rgba(247,249,252,0.17)'/%3E%3Crect x='24' y='32' width='8' height='8' fill='rgba(247,249,252,0.07)'/%3E%3Crect x='0' y='8' width='8' height='8' fill='rgba(247,249,252,0.17)'/%3E%3Crect x='40' y='168' width='8' height='8' fill='rgba(247,249,252,0.07)'/%3E%3Crect x='48' y='168' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='184' y='32' width='8' height='8' fill='rgba(247,249,252,0.17)'/%3E%3Crect x='24' y='96' width='8' height='8' fill='rgba(247,249,252,0.17)'/%3E%3Crect x='0' y='64' width='8' height='8' fill='rgba(247,249,252,0.11)'/%3E%3Crect x='0' y='48' width='8' height='8' fill='rgba(247,249,252,0.07)'/%3E%3Crect x='8' y='56' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='160' y='144' width='8' height='8' fill='rgba(247,249,252,0.05)'/%3E%3Crect x='168' y='144' width='8' height='8' fill='rgba(247,249,252,0.03)'/%3E%3C/svg%3E");
+  background-size:192px 192px;
+}
+/* Borde inferior en escalones de píxeles, del color de la sección que sigue */
+.od-hero::after{
+  content:''; position:absolute; left:0; right:0; bottom:-1px; height:24px; z-index:2; pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='24' shape-rendering='crispEdges'%3E%3Crect x='0' y='16' width='8' height='8' fill='rgb(247,249,252)'/%3E%3Crect x='8' y='16' width='8' height='8' fill='rgb(247,249,252)'/%3E%3Crect x='16' y='8' width='8' height='16' fill='rgb(247,249,252)'/%3E%3Crect x='24' y='16' width='8' height='8' fill='rgb(247,249,252)'/%3E%3Crect x='48' y='16' width='8' height='8' fill='rgb(247,249,252)'/%3E%3Crect x='56' y='8' width='8' height='16' fill='rgb(247,249,252)'/%3E%3Crect x='64' y='8' width='8' height='16' fill='rgb(247,249,252)'/%3E%3Crect x='72' y='16' width='8' height='8' fill='rgb(247,249,252)'/%3E%3Crect x='80' y='16' width='8' height='8' fill='rgb(247,249,252)'/%3E%3Crect x='96' y='16' width='8' height='8' fill='rgb(247,249,252)'/%3E%3Crect x='104' y='8' width='8' height='16' fill='rgb(247,249,252)'/%3E%3Crect x='112' y='16' width='8' height='8' fill='rgb(247,249,252)'/%3E%3C/svg%3E") repeat-x left bottom / 128px 24px;
+}
+
+.od-carousel{ position:relative; z-index:1; }
+.od-slides{ display:grid; }
+.od-slide{
+  grid-area:1 / 1; position:relative;
+  display:flex; align-items:center;
+  padding-top:clamp(8rem,15vh,11rem);
+  opacity:0; visibility:hidden;
+  transition:opacity .8s var(--ease), visibility 0s linear .8s;
+}
+.od-slide.is-active{
+  opacity:1; visibility:visible; z-index:1;
+  transition:opacity .8s var(--ease), visibility 0s;
+}
+.od-slide > .hero__in{ width:100%; align-items:center; padding-bottom:clamp(6.5rem,9vw,8rem); }
+
+/* Entrada del texto cada vez que la diapositiva se activa */
+.od-slide.is-active .hero__copy > *{ animation:odrise .8s var(--ease) both; }
+.od-slide.is-active .hero__copy > :nth-child(2){ animation-delay:.07s; }
+.od-slide.is-active .hero__copy > :nth-child(3){ animation-delay:.14s; }
+.od-slide.is-active .hero__copy > :nth-child(4){ animation-delay:.21s; }
+@keyframes odrise{ from{ opacity:0; transform:translateY(18px); } }
+
+/* Imagen de fondo opcional (banner con foto): se activa al definir --img en el style del div */
+.od-slide__bg{ position:absolute; inset:0; z-index:0; background:var(--img) var(--img-pos,center) / cover no-repeat; }
+.od-slide__bg:not([style*="--img"]){ display:none; }
+.od-slide__bg::after{
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(90deg, rgba(7,27,52,.94) 0%, rgba(7,27,52,.78) 42%, rgba(7,27,52,.35) 100%);
+}
+
+/* Controles (idénticos a los de /merch/, con puntos cuadrados) */
+.od-carousel__ui{ position:absolute; left:0; right:0; bottom:2.8rem; z-index:3; pointer-events:none; }
+.od-carousel__bar{ display:flex; align-items:center; gap:.6rem; }
+.od-carousel__bar > *{ pointer-events:auto; }
+.mc-btn{
+  width:40px; height:40px; flex:none;
+  display:inline-flex; align-items:center; justify-content:center;
+  color:#fff; background:rgba(7,27,52,.4);
+  border:1px solid rgba(247,249,252,.28); border-radius:var(--r-lg);
+  -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px);
+  transition:border-color var(--t), background var(--t);
+}
+.mc-btn:hover{ border-color:var(--c-tec); background:rgba(7,27,52,.7); }
+.mc-btn svg{ width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.mc-btn--toggle{ margin-left:.5rem; }
+.mc-ico-play{ display:none; fill:currentColor; stroke:none; }
+.od-carousel.is-paused .mc-ico-pause{ display:none; }
+.od-carousel.is-paused .mc-ico-play{ display:block; }
+.mc-dots{ display:flex; align-items:center; gap:.5rem; padding:0 .5rem; }
+.mc-dot{
+  position:relative; width:10px; height:10px; border-radius:0;
+  background:rgba(247,249,252,.38);
+  transition:width .4s var(--ease), background .3s var(--ease);
+}
+.mc-dot::after{ content:''; position:absolute; inset:-12px -4px; }
+.mc-dot:hover{ background:rgba(247,249,252,.75); }
+.mc-dot[aria-current="true"]{ width:28px; background:var(--c-tec); }
+
+/* Cursor de terminal parpadeando al final del título */
+.od-caret{
+  display:inline-block; width:.4em; height:.8em; margin-left:.12em;
+  background:var(--c-tec); vertical-align:-.04em;
+  animation:odCaret 1.1s steps(1) infinite;
+}
+@keyframes odCaret{ 50%{ opacity:0; } }
+
+/* Ilustración: escala entera (cada "píxel" mide --px) para que los bordes queden nítidos */
+.od-hero__art{ --px:6px; justify-self:end; width:100%; max-width:calc(64 * var(--px)); }
+.od-scene{ display:block; width:100%; height:auto; }
+.od-slide.is-active .od-scene{ animation:odReveal 1.2s steps(24) .2s both; }
+@keyframes odReveal{ from{ clip-path:inset(0 0 100% 0); } to{ clip-path:inset(0 0 0 0); } }
+
+/* Escena 1 · el ranking se reordena: "Vos" (la barra turquesa) sube al primer puesto */
+.od-slide.is-active .od-row--a{ animation:odRowA 7s steps(1) 1.6s infinite; }
+.od-slide.is-active .od-row--b{ animation:odRowB 7s steps(1) 1.6s infinite; }
+.od-slide.is-active .od-row--vos{ animation:odRowVos 7s steps(1) 1.6s infinite; }
+@keyframes odRowA  { 0%{ transform:translateY(11px); } 70%{ transform:translateY(17px); } }
+@keyframes odRowB  { 0%{ transform:translateY(17px); } 40%{ transform:translateY(23px); } }
+@keyframes odRowVos{ 0%{ transform:translateY(23px); } 40%{ transform:translateY(17px); } 70%{ transform:translateY(11px); } }
+.od-slide.is-active .od-bell{ animation:odRing 3.6s steps(1) 2s infinite; }
+@keyframes odRing{ 0%{ transform:translateX(0); } 88%{ transform:translateX(-1px); } 92%{ transform:translateX(1px); } 96%{ transform:translateX(-1px); } 100%{ transform:translateX(0); } }
+.od-slide.is-active .od-agent,
+.od-slide.is-active .od-bob{ animation:odBob 1.8s steps(1) infinite; }
+@keyframes odBob{ 50%{ transform:translateY(-1px); } }
+.od-slide.is-active .od-spark{ animation:odBlink 2.4s steps(1) infinite; }
+.od-slide.is-active .od-spark--1{ animation-delay:.8s; }
+.od-slide.is-active .od-spark--2{ animation-delay:1.6s; }
+@keyframes odBlink{ 50%{ opacity:0; } }
+
+/* Escena 2 · el código se "escribe" línea por línea */
+.od-slide.is-active .od-code{ animation:odType 8s steps(10) infinite backwards; animation-delay:calc(.8s + var(--i) * .7s); }
+@keyframes odType{
+  0%{ clip-path:inset(0 100% 0 0); } 12%{ clip-path:inset(0 0 0 0); }
+  88%{ clip-path:inset(0 0 0 0); } 100%{ clip-path:inset(0 100% 0 0); }
+}
+.od-slide.is-active .od-caret-px{ animation:odBlink 1s steps(1) infinite; }
+
+/* Escena 3 · las barras del gráfico crecen */
+.od-bar{ transform-box:fill-box; transform-origin:50% 100%; }
+.od-slide.is-active .od-bar{ animation:odGrow 6s steps(6) infinite backwards; animation-delay:calc(.8s + var(--i) * .4s); }
+@keyframes odGrow{ 0%{ transform:scaleY(.17); } 22%{ transform:scaleY(1); } 88%{ transform:scaleY(1); } 100%{ transform:scaleY(.17); } }
+
+@media (prefers-reduced-motion:reduce){
+  .od-scene, .od-scene *, .od-caret, .od-slide .hero__copy > *{ animation:none !important; }
+}
+
+/* --------------------------------------------------------------- SERVICIOS */
+/* Acordeón idéntico al del home (mismos estilos y JS); acá solo se ajusta al fondo claro */
+.od-cats .unit{ --u:var(--c-tec-ink); }
+.od-cats .unit.is-open .unit__plus::before,
+.od-cats .unit.is-open .unit__plus::after{ background:#fff; }
+.od-cats .unit__plus{ border-radius:0; }                 /* botón "+" cuadrado */
+.od-cats .unit__ico{ width:36px; height:36px; fill:currentColor; stroke:none; shape-rendering:crispEdges; }
+.od-cats .btn--unit{ background:var(--ink); color:var(--paper); }
+.od-cats .btn--unit:hover{ filter:none; background:var(--ink-3); }
+
+/* Escalones de píxeles hacia la sección oscura de contacto */
+.od-proc{ position:relative; }
+.od-proc::after{
+  content:''; position:absolute; left:0; right:0; bottom:-1px; height:24px; pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='24' shape-rendering='crispEdges'%3E%3Crect x='0' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='8' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='16' y='8' width='8' height='16' fill='rgb(10,11,13)'/%3E%3Crect x='24' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='48' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='56' y='8' width='8' height='16' fill='rgb(10,11,13)'/%3E%3Crect x='64' y='8' width='8' height='16' fill='rgb(10,11,13)'/%3E%3Crect x='72' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='80' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='96' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3Crect x='104' y='8' width='8' height='16' fill='rgb(10,11,13)'/%3E%3Crect x='112' y='16' width='8' height='8' fill='rgb(10,11,13)'/%3E%3C/svg%3E") repeat-x left bottom / 128px 24px;
+}
+
+/* ------------------------------------------------------------ RESPONSIVE */
+@media (min-width:1081px){
+  /* Columnas de ancho fijo: la ilustración se adapta a la columna y no la estira */
+  .od-slide > .hero__in{ grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); }
+}
+@media (min-width:1280px){
+  .od-hero__art{ --px:7px; }
+}
+@media (max-width:1080px){
+  .od-slide{ padding-top:clamp(7rem,14vh,9rem); }
+  .od-hero__art{ --px:5px; justify-self:center; margin-top:1rem; }
+  .od-slide > .hero__in{ padding-bottom:6.5rem; }
+}
+@media (max-width:640px){
+  .od-slide{ padding-top:6.5rem; }
+  .od-hero__art{ --px:4px; }
+}
