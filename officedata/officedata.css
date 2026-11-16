@@ -4,6 +4,41 @@
    tipografías del sitio). Lo único propio es el toque "pixel art".
    ========================================================================== */
 
+/* --------------------------------------------------------------- TIPOGRAFÍAS */
+/* Conjunto propio de OfficeData (el resto del sitio mantiene Archivo + IBM Plex Mono):
+   · Audiowide     → títulos grandes del hero, títulos de sección y nombres de productos
+   · Ubuntu Mono   → párrafos y botones del hero, subtítulos de cada servicio y sus botones
+   · Roboto        → texto corrido y detalles chicos (copetes, etiquetas, números)
+   · Space Grotesk → resto de los títulos (pasos, formulario)                              */
+:root{
+  --display: "Space Grotesk", "Roboto", system-ui, sans-serif;
+  --sans:    "Roboto", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --mono:    "Roboto", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
+h1, h2, h3, h4{ font-family:var(--display); font-stretch:100%; }
+/* Texto legal pequeño del pie */
+.footer__bar p, .mnav__tel{ font-family:var(--sans); }
+
+/* Hero y títulos */
+.od-hero .hero__h1{ font-family:"Audiowide", var(--display); font-weight:400; letter-spacing:0; }
+.od-hero .hero__lead,
+.od-hero .hero__actions .btn{ font-family:"Ubuntu Mono", ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.od-hero .hero__actions .btn{ font-weight:700; font-size:1rem; padding-inline:1rem; }
+.od-hero .hero__lead{ font-size:1.17rem; line-height:1.55; }   /* Ubuntu Mono se ve más chica: sube un poco */
+.shead__h2{ font-family:"Audiowide", var(--display); font-weight:400; letter-spacing:0; }
+.unit__name{ font-family:"Audiowide", var(--display); font-weight:400; letter-spacing:0; }
+/* Subtítulos de cada servicio (tagline y título de cada ítem) y sus botones: Ubuntu Mono */
+.od-cats .unit__tag,
+.od-cats .svc h4,
+.od-cats .btn--unit{ font-family:"Ubuntu Mono", ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.od-cats .svc h4,
+.od-cats .btn--unit{ font-weight:700; }
+/* Ubuntu Mono se ve más chica que Roboto: sube un poco */
+.od-cats .unit__tag{ font-size:1rem; }
+.od-cats .svc h4{ font-size:1.0625rem; }
+.od-cats .btn--unit{ font-size:1rem; }
+.footer__bar p, .mnav__tel{ font-family:var(--sans); }
+
 /* ----------------------------------------------------------------- HEADER */
 /* OfficeData + "Una solución de" + letras de Office Pack (siempre en blanco) */
 .brandset{ display:flex; align-items:center; gap:1.1rem; min-width:0; }
@@ -117,6 +152,9 @@
 .mc-dot::after{ content:''; position:absolute; inset:-12px -4px; }
 .mc-dot:hover{ background:rgba(247,249,252,.75); }
 .mc-dot[aria-current="true"]{ width:28px; background:var(--c-tec); }
+
+/* DM Sans es algo más ancha que Archivo: botones un poco más compactos para que los tres entren en una fila */
+.od-hero .hero__actions{ gap:.65rem; }
 
 /* Botón "Ingresar a la App": violeta propio de OfficeData */
 .btn--app{ background:#231545; color:#fff; }
