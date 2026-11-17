@@ -284,6 +284,10 @@ const CONFIG = {
     })
       .then((res) => {
         if (!res.ok) throw new Error('formspree');
+        // Evento para Google Tag Manager (conversión "Contacto").
+        const unidad = (form.elements.unidad && form.elements.unidad.value) || '';
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'form_contacto_ok', form_unidad: unidad });
         form.reset();
         done('¡Gracias! Recibimos tu consulta y te respondemos a la brevedad.');
       })
